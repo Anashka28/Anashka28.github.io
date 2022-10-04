@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Email Signature</title>
+    <style type="text/css">
+        *{
+            margin: 0; padding: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: all .2s linear;
+        }
+        .container {
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(-45deg, rgb(36, 35, 31), #454446);
+            display: flex;
+            background-position: center;
+            background-size: cover;
+
+        }
+        .container .box{
+            align-items: center;
+            width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px #0009;
+            backdrop-filter: blur(5px);
+            background: rgba(255,255,255,.2);
+            display: flex;
+        }
+        .container .box .image{
+            padding: 60px;
+            margin-right: 40px;
+            border-radius: 10px 50px 50px 10px;
+            background: #fff2;
+            height: 270px;
+        }
+        .container .box .image img{
+            width: 150px;
+            height: 150px;
+            border-radius: 0 50px 0 50px;
+            box-shadow: 0 0 0 10px #fff3;
+        }
+        .container .box .info .name{
+            font-size: 30px;
+            padding: 5px 0;
+            color: #fff;
+            text-transform: capitalize;
+        }
+        .container .box .info .post{
+            font-size: 20px;
+            display: block;
+            margin-bottom: 30px;
+            color: #fff9;
+        }
+        .container .box .info .detail li{
+            font-size: 20px;
+            color: #fff8;
+            display: block;
+        }
+        .container .box .info .detail li i{
+            color: #fff;
+            padding: 7px 10px 7px 5px;
+        }
+        .container .box .info .detail li:hover{
+            color: #fff;
+        }
+        .container .box .info .icons{
+            display: flex;
+            flex-flow: column;
+            top: 50%; right: 30px;
+            position: absolute;
+            width: 45px;
+            height: 220px;
+            align-items: center;
+            justify-content: center;
+            background: #fff3;
+            transform: translate(0, -50%);
+            border-radius: 50px;
+        }
+        .container .box .info .icons a{
+            color: #fff;
+            font-size: 23px;
+            padding: 5px 0;
+        }
+        .container .box .info .icons a:hover{
+            color: #fff1;
+        }
+        @media (max-width:730px){
+            .container .box {
+                width: 330px;
+                flex-flow: column;
+                padding-bottom: 100px;
+                margin: 10px;
+                border-radius: 5px;
+            }
+            .container .box .image{
+                margin-right: 0;
+                margin-bottom: 20px;
+                border-radius: 0 0 50px 50px;
+                width: 100%;
+                text-align: center;
+            }
+            .container .box .info .icons{
+                left: 50%; top: 87%;
+                transform: translate(-50%, 0);
+                flex-flow: row;
+                width: 240px;
+                height: 45px;               
+            }
+            .container .box .info .icons i{
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="image">
+                <img src="https://i.ibb.co/tmjpWJc/69168cfd71c0bb1ea1a099103cf0387b.jpg" alt="">
+            </div>
+            <div class="info">
+                <div class="name"><h3>Jane Starlin</span></h3></div>
+                <div class="post"><h3>Video Editor</h3></div>
+                
+                <ul class="detail">
+                    <li><i class="fas fa-phone"></i>+94-741-892-068</li>
+                    <li><i class="fas fa-envelope"></i>r.anashka2823@outlook.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i>130/C, hover street, kairo.</li>
+                </ul>
+                <div class="icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
