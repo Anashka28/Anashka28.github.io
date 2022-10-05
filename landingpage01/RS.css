@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+header{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(img/WhatsApp\ Image\ 2022-10-05\ at\ 12.25.33\ PM.jpeg);    
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 50px;
+}
+.logo {
+    font-size: 40px;
+    font-family: 'yesteryear', 'Courier New';
+    color: #fff;
+}
+.nav-bar{
+    list-style-type: none;
+    padding-top: 10px;
+}
+.nav-bar li{
+    display: inline-block;
+    color: #fff;
+    font-family: 'oswald', Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: #fff;
+    padding-left: 10px;
+    transition: all .3s ease-in-out;
+}
+.middle{
+    text-align: center;
+}
+header .title1{
+    text-align: center;
+    color: #f2ac32;
+    font-family: 'rochester', 'cursive';
+    font-size: 44px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+.title2{
+    color: #fff;
+    font-family: 'cursive';
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+header .cta-button{
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    padding: 10px 20px;
+    background: #dd961b;
+    font-weight: 300px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+.nav-bar .cart{
+    font-size: 20px;
+    padding-left: 5px;
+}
+.nav-bar .search{
+    font-size: 25px;
+    padding-left: 5px;
+}
+nav .nav-bar .welcome a{
+    color: #e4a343;
+    transition: all .3s ease-in-out;
+}
+nav .nav-bar .welcome a:hover{
+    color: #fff;
+}
+header .cta-button:hover{
+    color: #fff9;
+    background-color: #4b3001;
+}
+.nav-bar a:hover{
+    color: #fff9;
+}
+@media (max-width:768px){
+    
+    .logo{
+        margin-bottom: 10px;
+    }
+    nav{
+     display: flex;
+     flex-direction: column;
+    }
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-bar li{
+        padding: 5px 0;
+    }
+    .middle{
+        align-items: center;
+        justify-content: center;
+        margin-top: -80px;
+    }
+    .middle .title1{
+        font-size: 30px;
+    }
+    .middle .title2{
+        font-size: 35px;
+    }
+    .middle .cta-button{
+        font-size: 20px;
+    }
+}
+
