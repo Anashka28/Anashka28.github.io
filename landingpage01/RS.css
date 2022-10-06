@@ -1,3 +1,5 @@
+/*************************header section*****************/
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +10,7 @@ header{
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(img/WhatsApp\ Image\ 2022-10-05\ at\ 12.25.33\ PM.jpeg);    
     height: 100vh;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 nav{
@@ -17,7 +20,7 @@ nav{
 }
 .logo {
     font-size: 40px;
-    font-family: 'yesteryear', 'Courier New';
+    font-family: 'yesteryear', 'Cursive';
     color: #fff;
 }
 .nav-bar{
@@ -49,7 +52,7 @@ header .title1{
 }
 .title2{
     color: #fff;
-    font-family: 'cursive';
+    font-family: 'oswald', Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 50px;
     letter-spacing: 2px;
@@ -87,26 +90,113 @@ header .cta-button:hover{
 .nav-bar a:hover{
     color: #fff9;
 }
+.check-btn{
+    color: #fff;
+    font-size: 20px;
+    float: right;
+    line-height: 80px;
+    margin-right: -15px;
+    cursor: pointer;
+    display: none;
+    margin-top: -20px;  
+}
+.check-btn:hover{
+    color: #dd961b;
+}
+#check{
+    display: none;
+}
+
+
+
+
+/************************border section*****************************/
+
+.border-section{
+    display: flex;
+    padding: 100px;
+    justify-content: center;
+    background-color: rgb(204, 203, 203);
+}
+.border-section .food-item{
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    margin: 0 20px;    
+}
+
+.border-section .food-0 .discover{
+    color: #f2ac32;
+    font-family: 'rochester', 'cursive';
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    margin-top: 30%;
+}
+.border-section .food-0 .our-story{
+    color: rgba(34, 31, 31, 0.6);
+    font-family: 'oswald', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 15px;
+}
+.border-section .food-0 .reputation{
+    color: #110f0f;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 15px;
+    letter-spacing: .5px;
+}
+.border-section .food-0 .about-us{
+    color: #dd961b;
+    font-family: 'Trebuchet MS';
+}
+.border-section .food-0 .about-us:hover{
+    color: #f2f2f2;
+}
+
+.border-section .food-0{
+    border: 2px solid #dd961b;
+    position: relative;
+}
+.border-section .food-0 .layout{
+    position: absolute;
+    top: 10px; right: 20px;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+
+.border-section .food-1{
+    background-image: url(img/food3.jpeg);
+    background-size: cover;
+    margin-top: -30px;
+}
+.border-section .food-2{
+    background-image: url(img/food2.jpeg);
+    background-size: cover;
+}
+
 @media (max-width:768px){
     
     .logo{
         margin-bottom: 10px;
+        font-size: 30px;
+        margin-left: -15px;
     }
     nav{
      display: flex;
-     flex-direction: column;
     }
     .nav-bar{
         display: flex;
         flex-direction: column;
     }
     .nav-bar li{
+        margin-top: 5px;
         padding: 5px 0;
     }
+    
     .middle{
         align-items: center;
         justify-content: center;
-        margin-top: -80px;
+        margin-top: 10px;
     }
     .middle .title1{
         font-size: 30px;
@@ -116,6 +206,43 @@ header .cta-button:hover{
     }
     .middle .cta-button{
         font-size: 20px;
+    }
+    .check-btn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 500px;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .3s;
+        background: linear-gradient(#2c3e50, #534b3d);
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a:hover,a.active{
+        background: none;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .border-section{
+        display: flex;
+        flex-flow: column;
+    }
+    .border-section .food-0{
+        margin-bottom: 80px;
+        margin-left: -77px;
+    }
+    .border-section .food-1{
+        margin-bottom: 80px;
+        margin-left: -77px;
+    }
+    .border-section .food-2{
+        margin-left: -77px;
     }
 }
 
