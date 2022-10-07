@@ -110,7 +110,7 @@ header .cta-button:hover{
 
 
 
-/************************border section*****************************/
+/************************discover section*****************************/
 
 .border-section{
     display: flex;
@@ -126,7 +126,7 @@ header .cta-button:hover{
 }
 
 .border-section .food-0 .discover{
-    color: #f2ac32;
+    color: #ee9b0c;
     font-family: 'rochester', 'cursive';
     margin-bottom: 15px;
     letter-spacing: 1px;
@@ -148,7 +148,7 @@ header .cta-button:hover{
     font-family: 'Trebuchet MS';
 }
 .border-section .food-0 .about-us:hover{
-    color: #f2f2f2;
+    color: #3f3a3a;
 }
 
 .border-section .food-0{
@@ -173,6 +173,111 @@ header .cta-button:hover{
     background-image: url(img/food2.jpeg);
     background-size: cover;
 }
+
+/************************service section*****************************/
+
+.service-section{
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url(img/bachground.jpeg);    
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+}
+.service-section .middle .middle-title1{
+    color: #e4a343;
+    font-size: 40px;
+    font-family: 'rochester', 'cursive';
+    margin-bottom: 20px;
+    padding-top: 70px;
+}
+.service-section .middle .middle-title2{
+    color: #fff9;
+    font-size: 40px;
+    font-family: 'oswald', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.row{
+    display: flex;
+    padding-top: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.row-image1,
+.row-image2,
+.row-image3{
+    width: 100%;
+    height: 150px;
+    position: relative;
+   
+}
+.row-image{
+    padding: 0 15px;
+    width: 250px;   
+}
+
+.row-image1{
+    background-image: url(img/breakfast.jpeg);
+    background-size: cover;
+    
+}
+.row-image2{
+    background-image: url(img/lunch.jpeg);
+    background-size: cover;
+}
+.row-image3{
+    background-image: url(img/dinner.jpeg);
+    background-size: cover;
+}
+.row-image1:hover .speciality-overlay,
+.row-image2:hover .speciality-overlay,
+.row-image3:hover .speciality-overlay{
+    opacity: 1;
+}
+.row-image .service{
+    color: #fff;
+    letter-spacing: 2px;
+    padding-top: 10px;
+    font-family: 'oswald', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.speciality-overlay{
+    position: absolute;
+    background-color: rgba(243, 178, 66, 0.7);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+.speciality-overlay-border{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.speciality-overlay-border a{
+    color: #fff;
+    font-family: 'oswald', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:768px){
     
@@ -203,6 +308,7 @@ header .cta-button:hover{
     }
     .middle .title2{
         font-size: 35px;
+        padding: 0 20px;
     }
     .middle .cta-button{
         font-size: 20px;
@@ -232,17 +338,41 @@ header .cta-button:hover{
     .border-section{
         display: flex;
         flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
     }
     .border-section .food-0{
-        margin-bottom: 80px;
-        margin-left: -74px;
+        margin-bottom: 100px;       
     }
     .border-section .food-1{
         margin-bottom: 80px;
-        margin-left: -77px;
     }
-    .border-section .food-2{
-        margin-left: -77px;
+    .service-section{
+        height: 850px;
+        margin-top: -10px;
     }
+    .service-section .middle .middle-title1{
+        font-size: 30px;        
+    }
+    .service-section .middle .middle-title2{
+        font-size: 40px;
+        margin-bottom: 45px;
+    }
+    .row{
+        display: flex;
+        flex-flow: column;
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .service{
+        padding-bottom: 30px;
+    }
+    
+
+
+    
 }
 
