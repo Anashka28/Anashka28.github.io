@@ -142,6 +142,8 @@ header .cta-button:hover{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-bottom: 15px;
     letter-spacing: .5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .border-section .food-0 .about-us{
     color: #dd961b;
@@ -249,7 +251,8 @@ header .cta-button:hover{
     height: 100%;
     padding: 10px;
     opacity: 0;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 .speciality-overlay-border{
     text-decoration: none;
@@ -267,8 +270,241 @@ header .cta-button:hover{
     color: #fff;
     font-family: 'oswald', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+/************************today-special-section*****************************/
+
+.today-special-section{
+    padding: 50px 50px 100px 50px;
+    text-align: center;
+}
+.today-special-section{
+    width: 85%;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.today-special-main .today{
+    color: #eca529;
+    font-size: 40px;
+    font-family: 'rochester', 'Trebuchet MS';
+    text-align: center;
+    margin-bottom: 20px;
+}
+.section01,
+.section02{
+    display: flex;
+}
+.dessert-section{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.today-special-main .special-menu{
+    color: rgba(22, 20, 20, 0.795);
+    font-size: 40px;
+    font-family: 'oswald', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+}
 
 
+.dessert-section-content{
+    color: #fff;
+    background-color: #f2ac32;
+    width: 50%;
+    height: 450px;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+   
+}
+.fa-ice-cream{
+    font-size: 25px;
+    padding: 80px 10px 20px 10px;
+}
+.dessert{
+    font-family: 'oswald', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding: 1px 10px 5px 10px;
+}
+.dessert-name{
+    font-family: 'rochester', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 1px 10px 20px 10px;
+}
+.dessert-para{
+    font-family: 'oswald', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 1px 10px 30px 10px;
+}
+.more-info01{
+    color: #fff;
+    font-family: 'oswald', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+.more-info01:hover,
+.more-info:hover{
+    color: #2c3e50;
+}
+
+.dessert-section-image{
+    width: 50%;
+    height: 450px;
+    background-image: url(img/dessert5.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.italian-food-section{
+    width: 50%;
+}
+.italian-food-section-01{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;   
+}
+.fa-pizza-slice{
+    font-size: 20px;
+    padding: 30px 10px 20px 10px;
+}
+.pizza{
+    color: #c2800e;
+    letter-spacing: 1px;
+    font-family: 'rochester', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.pizza-content{
+    font-family: 'oswald', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.more-info{
+    color: #d88d0d;
+    letter-spacing: 1px;
+    font-family: 'rochester', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.italian-food-section-content{
+    width: 50%;
+    height: 225px;
+    background-color: #fff;
+}
+
+.italian-food-section-image1{
+    background-image: url(img/pizza3.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 225px;
+}
+.fa-burger{
+    font-size: 20px;
+    padding: 30px 10px 20px 10px;
+}
+.burger{
+    color: #c2800e;
+    letter-spacing: 1px;
+    font-family: 'rochester', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.burger-content{
+    font-family: 'oswald', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.italian-food-section02{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.italian-food-section-image2{
+    background-image: url(img/burger.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 225px;
+}
+
+.italian-food-section2-content{
+    width: 50%;
+    height: 225px;
+    background-color: #fff;
+    text-align: center;
+    align-content: center;
+}
+.seperator{
+    display: inline-block;
+    width: 40px;
+    border-bottom: 2px solid #fff;
+    margin: 15px auto; 
+}
+.seperator02{
+    display: inline-block;
+    width: 40px;
+    border-bottom: 2px solid #e69812;
+    margin: 15px auto; 
+}
+.American-food-section-image1{
+    background-image: url(img/dish2.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 225px;
+}
+.American-food-section-image2{
+    background-image: url(img/dish5.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 225px;
+}
+
+.last-food-section{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.last-food-section-content{
+    color: #fff;
+    background-color: #f2ac32;
+    width: 50%;
+    height: 450px;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.last-section-image{
+    background-image: url(img/dish1.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 450px;
+}
+.fa-utensils{
+    font-size: 20px;
+    padding: 30px 10px 20px 10px;
+}
+.fa-pepper-hot{
+    font-size: 25px;
+    padding: 80px 10px 20px 10px;
+}
 
 
 
@@ -370,9 +606,109 @@ header .cta-button:hover{
     .service{
         padding-bottom: 30px;
     }
+    .today-special-main .today{
+        font-size: 30px;
+    }
+    .today-special-main .special-menu{
+        font-size: 35px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
     
-
+    .section01,
+    .section02{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .dessert-section{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .dessert-section-content{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 300px;
+    }
+    .fa-ice-cream{
+        padding-top: 0;
+    }
+    .dessert-section-image{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 300px;
+    }
+    .italian-food-section{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .italian-food-section-content,
+    .italian-food-section2-content{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 300px;
+        border: 2px solid rgba(26, 21, 21, 0.067);
+    }
+    .italian-food-section-image1,
+    .italian-food-section-image2,
+    .American-food-section-image1,
+    .American-food-section-image2{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 300px;
+    }
+    .section01 .italian-food-section02{
+        flex-direction: column-reverse;
+    }
+    
+    .section02 .italian-food-section-01{
+        flex-direction: column-reverse;
+    }
 
     
+    .last-food-section{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .last-food-section-content{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 300px;
+    }
+    .fa-pepper-hot{
+        padding-top: 0;
+    }
+    .last-section-image{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 300px;
+    }
+   
 }
 
