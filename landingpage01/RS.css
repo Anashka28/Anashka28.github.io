@@ -20,7 +20,7 @@ nav{
 }
 .logo {
     font-size: 40px;
-    font-family: 'yesteryear', 'Cursive';
+    font-family: 'rochester', 'Cursive';
     color: #fff;
 }
 .nav-bar{
@@ -60,6 +60,7 @@ header .title1{
 }
 header .cta-button{
     text-align: center;
+    font-family: 'oswald', Georgia, 'Times New Roman', Times, serif;
     font-size: 25px;
     color: #fff;
     padding: 10px 20px;
@@ -259,6 +260,7 @@ header .cta-button:hover{
     width: 100%;
     height: 100%;
     border: 2px solid #fff;
+    font-family: 'oswald', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -330,6 +332,7 @@ header .cta-button:hover{
     font-size: 25px;
     letter-spacing: 1px;
     padding: 1px 10px 5px 10px;
+    color: #181717;
 }
 .dessert-name{
     font-family: 'rochester', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -489,6 +492,7 @@ header .cta-button:hover{
     align-content: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+    
 }
 .last-section-image{
     background-image: url(img/dish1.jpeg);
@@ -506,8 +510,60 @@ header .cta-button:hover{
     padding: 80px 10px 20px 10px;
 }
 
+/************************footer-section*****************************/
 
-
+footer{
+    padding: 50px 0 10px 0;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),  url(img/footer3.jpeg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.footer-info{
+    margin: 20px 50px;
+}
+.footer-title{
+    font-family: 'oswald', 'cursive';
+    color: #f2ac32;
+    margin-bottom: 30px;
+}
+.footer-text{
+    font-family: 'oswald', 'cursive';
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.footer-email{
+    font-family: 'oswald', 'cursive';
+    height: 25px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+.footer-submit{
+    font-family: 'oswald','cursive';
+    color: #fff;
+    background-color: #ee9b0c;
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+}
+.copyright{
+    padding: 20px 0 20px 0;
+    text-align: center;
+    font-family: 'oswald', 'cursive';
+    border-top: 1px solid #cac0c0;
+    justify-content: center;
+}
+.raw{
+    color: #e69812!important;
+    padding-left: 10px;
+}
 
 
 
