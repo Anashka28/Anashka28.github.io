@@ -1,0 +1,343 @@
+*{
+   font-family: 'poppins', sans-serif;
+   box-sizing: border-box;
+}
+body {
+    background: #080808;
+    color: #fff;
+   
+}
+#header, #about, #services, #contact {
+    padding: 20px 5%;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 30px;
+}
+span{
+    color: #ff004f;
+}
+.navbar-nav{
+    flex-direction: row;
+}
+.navbar-nav li{
+    list-style-type: none!important;
+}
+.navbar-nav li a{
+    list-style-type: none!important;
+    color: #fff;
+    text-decoration: none!important;
+    margin-left: 15px;
+    position: relative;
+}
+.navbar-nav li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.4s;
+}
+.check-btn{
+    font-size: 20px;
+    color: #ff004f;
+    line-height: 3px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.navbar-nav li a:hover::after{
+    width: 100%;
+}
+.text-header{
+    margin-top: 20%;
+}
+.text-header h1{
+    margin-bottom: 30px;
+}
+.text-header p{
+    font-family: 'playfair display';
+}
+.text-header img{
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #fcf4f7; 
+}
+.download-btn{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    background-color: #d8255eef;
+    padding: 10px 20px;
+}
+.download-btn i{
+    margin-left: 15px;
+}
+.download-btn:hover{
+    color: #262626;
+}
+
+/*----------------------------------------About---------------------------------*/
+
+#about {
+    margin-top: 300px;
+}
+.about-content{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 200px;
+}
+.tab-titles{
+    
+}
+.tab-links{
+    margin: 20px 0 20px;
+    cursor: pointer;
+    font-size: 15px;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff005160;
+    left: 0;
+    bottom: -6px;
+    transition: .4s;
+    position: absolute;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-links::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style-type: none;
+    margin-bottom: 10px;
+     
+}
+.tab-row .active-tab{
+    margin-bottom: 50px;
+}
+.tab-row{
+    margin-bottom: 100px;
+}
+/*.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}*/
+
+
+/*----------------------------------------services---------------------------------*/
+.my-sevices{
+    margin-bottom: 50px;
+    
+}
+.services-list div{
+    background: #262626;
+    border-radius: 10px;
+    margin: 10px;
+    transition: all 0.4s;
+}
+.services-list div i{
+    font-size: 20px;
+    margin: 20px 0;
+}
+.services-list div p{
+    font-size: 15px;
+    font-weight: 200;
+    
+}
+.services-list div:hover{
+    background: rgba(255, 0, 81, 0.9);
+    transform: translateY(-10px);
+}
+#services{
+    margin-bottom: 50px;
+}
+
+/*----------------------------------------porfolio---------------------------------*/
+#portfolio{
+    margin-bottom: 100px;
+}
+.work-list .col-sm-4 img{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    border-radius: 10px;
+    transition: all .4s;
+    overflow: hidden;
+}
+.my-work{
+    margin-left: 5%;
+    margin-bottom: 50px;
+}
+.work-list .work{
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;   
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    text-align: center;
+    transition: all 0.4s;
+}
+.work a{
+    text-decoration: none;
+}
+.work a i{
+    color: #fff;
+}
+.layer h3{
+    font-size: 20px;
+}
+.layer p{
+    font-size: 15px;
+    font-weight: 100;
+}
+.layer a{
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.layer a i{
+    color: #ff0051c9;
+    font-size: 25px;
+    justify-content: center;
+    transform: translateY(8px);
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+
+/*----------------------------------------contact---------------------------------*/
+
+#contact{
+    margin-bottom: 100px;
+}
+#contact div h2{
+    margin-bottom: 40px;
+}
+.column-1 p a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+.column-1{
+
+}
+.fa-envelope, .fa-square-phone{
+    color: #ff004f;
+    margin-right: 10px;
+    font-size: 15px;
+}
+.social-icons{
+    margin-top: 40px;  
+}
+.social-icons a i{
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+    margin-right: 10px;
+    transition: all .4s;
+}
+.social-icons a i:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+form input, textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.form-btn{
+    width: 50%;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #ff004f;
+    transition: all .3s;
+}
+.form-btn:hover{
+    background-color: #262626;
+}
+
+.copyright{
+    width: 100%;
+    background: #262626;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.navbar-toggle{
+
+}
+.navbar-header{
+    justify-content: space-between;
+}
+
+@media (max-width:730px){
+    .navbar ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        background-color: #262626;
+        display: flex;
+        flex-direction: column;
+        transition: all .4s;
+    }
+    .navbar ul li{
+        display: block;
+        margin: 10px 0;
+    }
+    .navbar ul li a:hover{
+        color: #c7366475;
+    }
+    .check-btn{
+        display: block;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .copyright p{
+        font-size: 13px;
+    }
+
+}

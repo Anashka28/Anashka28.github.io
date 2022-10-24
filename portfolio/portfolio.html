@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- -------------------------------------home-------------------- -->
+   <div id="header">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">Port<span>folio.</span></div>
+            </div>
+            <input type="checkbox" id="check">
+                <label for="check" class="check-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            <ul class="nav navbar-nav float-left">
+                <li class="active"><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            </div>
+            
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="text-header col-sm-8">
+                    <p>Web Designer.</p>
+                    <h1> Hi, I'm <span>Anashka Weerasinghe</span><br>from Srilanka</h1>
+                    <a href="img/Grey Clean CV Resume Photo.pdf" download class="download-btn" >Download CV<i class="fa-solid fa-download"></i></a>
+                </div>
+                
+                <div class="text-header col-sm-4">
+                    <img src="img/WhatsApp Image 2022-10-10 at 4.50.12 PM.jpeg" alt="">
+                </div>
+            </div>
+        </div>  
+    </div>
+  <!--------------------------------------- About ---------------------------> 
+    <div id="about">
+        <div class="container-fluid">
+            <div class="about-me"><h1>About me</h1></div>
+            <p class="about-content">Currently pursuing network technology and cyber security degree in ICBT campus, as well as very passionate
+                about both web designing and developing and gained experience from freelancing work. 
+            </p>
+            <div class="tab-row">
+                <div class="tab-titles">
+                    <p class="tab-links active-link"  onclick="opentab('skills')">Skills</p>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Java Script</li>
+                            <li>Boostrap</li>
+                            <li>Git/Gitub</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tab-titles">
+                    <p class="tab-links"  id="education-tab" onclick="opentab('education')">Education</p>
+                    <div class="tab-contents" id="education" >
+                        <ul>
+                            <li><span>2022 - 2024</span><br>Network technology & Cyber security at ICBT campus</li>
+                            <li><span>2022</span><br>Front-end development at skillup acedemy</li>
+                            <li><span>2022</span><br>Digital marketing at Hubspot</li>
+                            <li><span>2022</span><br>SEO at Hubspot</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+      <!--------------------------------------- services ---------------------------> 
+    <div id="services">
+        <div class="container-fluid">
+            <h2 class="my-sevices">My Services</h2>
+
+            <div class="row services-list">
+                <div class="col-sm-4">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eligendi sit ipsa amet nemo maiores nihil cumque esse quos.</p>
+                </div>
+
+                <div class="col-sm-4 ">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <h3>Digital Marketing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eligendi sit ipsa amet nemo maiores nihil cumque esse quos.</p>
+                </div>
+
+                <div class="col-sm-4">
+                    <i class="fa-solid fa-magnifying-glass-dollar"></i>
+                    <h3>SEO</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eligendi sit ipsa amet nemo maiores nihil cumque esse quos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!--------------------------------------- porfolio ---------------------------> 
+    <div id="portfolio">
+        <div class="container-fluid">
+            <h1 class="my-work">My Work</h1>
+
+            <div class="row work-list">
+                <div class="col-md-4 col-sm-4 work">
+                    <img src="img/landing page.png" alt="">
+                    <div class="layer">
+                        <h3>web design</h3>
+                        <p>Responsive restaurant landing web page.</p>
+                        <a href="https://anashka28.github.io/landingpage01/RestaurantSite01.html"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 work">
+                    <img src="img/template01.png" alt="">
+                    <div class="layer">
+                        <h3>web design</h3>
+                        <p>Responsive email template.</p>
+                        <a href="https://anashka28.github.io/template07/template07.html"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 work">
+                    <img src="img/template02.png" alt="">
+                    <div class="layer">
+                        <h3>web design</h3>
+                        <p>Responsive email template.</p>
+                        <a href="https://anashka28.github.io/template04/template04.html"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row work-list">
+                <div class="col-sm-4 work">
+                    <img src="img/signature (2).png" alt="">
+                    <div class="layer">
+                        <h3>web design</h3>
+                        <p>Responsive email signature.</p>
+                        <a href="https://anashka28.github.io/signature04/signature04.html"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-4 work">
+                    <img src="img/signature (3).png" alt="">
+                    <div class="layer">
+                        <h3>web design</h3>
+                        <p>Responsive email signature.</p>
+                        <a href="https://anashka28.github.io/signature03/signature03.html"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-4 work">
+                    <img src="img/signature (4).png" alt="">
+                    <div class="layer">
+                        <h3>web design</h3>
+                        <p>Responsive email signature.</p>
+                        <a href="https://anashka28.github.io/signature02/signature02.html"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row work-list">
+                <div class="col-sm-4 work">
+                    <img src="img/signature.png" alt="">
+                    <div class="layer">
+                        <h3>web design</h3>
+                        <p>Responsive email signature.</p>
+                        <a href="https://anashka28.github.io/signature01/signature01.html"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-4 work">
+                    <img src="img/template03.png" alt="">
+                    <div class="layer">
+                        <h3>web design</h3>
+                        <p>Responsive email template.</p>
+                        <a href="https://anashka28.github.io/template07/template07.html"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-4 work">
+                   <!-- <img src="img/signature (4).png" alt="">
+                    <div class="layer">
+                        <h3>web design</h3>
+                        <p>Responsive email template.</p>
+                        <a href="https://anashka28.github.io/template04/template04.html"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------------- contact ---------------------------> 
+
+    <div id="contact">
+        <div class="container-fluid">
+            <h2 class="contact-me">Contact Me</h2>
+
+            <div class="row contact">
+                <div class="col-md-6 column-1">
+                    <p><a href="mailto:r.anashka2823@gmail.com"><i class="fa-solid fa-envelope"></i>r.anashka2823@gmail.com</a></p>
+                    <p><a href="tel:0764532035"><i class="fa-solid fa-square-phone"></i>+94-764-532-035</a></p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Anashka28/Anashka28.github.io"><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <form action="https://formspree.io/f/xaykpwzb" method="post">
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <textarea type="massage" placeholder="Massage" required></textarea>
+                        <input type="submit" rows="6" value="submit" class="form-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------------- copyright ---------------------------> 
+    <div class="copyright">
+        <p>Web design and developed by<span> RAW</span></p>
+    </div>
+
+
+
+    <script type="text/javascript">
+       
+    </script>
+
+</body>
+
+</html>
