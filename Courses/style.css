@@ -1,0 +1,27 @@
+nav{
+    font-size: 20px;
+}
+nav .navbar-brand{
+    font-size: 25px!important;
+}
+ul li a{
+    text-decoration: none;
+    color: #ffffff!important;
+    margin-left: 10px;
+}
+ul li a:hover{
+    color: rgba(255, 94, 0, 0.801)!important;
+}
+/* .img-fluid{
+    width: 100%!important;
+    height: 500px!important;
+} */
+.topic{
+    padding-right: 50px;
+}
+
+@media (min-width:768px){
+    .input-group{
+        width: 50%;
+    }
+}
