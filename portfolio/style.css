@@ -141,13 +141,13 @@ span{
     margin-bottom: 50px; 
 }
 .service{
-    background-color: #262626;
-    border-radius: 32px;
-    transition: all 0.4s;
+    background-color: #262626!important;
+    border-radius: 32px!important;
+    transition: all 0.4s!important;
 }
 .service:hover{
-    background-color:rgba(255, 0, 81, 0.9);;
-    transform: translateY(-10px)
+    background-color:rgba(255, 0, 81, 0.9)!important;
+    transform: translateY(-10px)!important;
 }
 .icon-box{
     font-size: 20px;
