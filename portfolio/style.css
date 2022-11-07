@@ -7,9 +7,6 @@ body {
     color: #fff;
    
 }
-#header, #about, #services, #contact {
-    padding: 20px 5%;
-}
 
 .navbar-brand {
     color: #fff;
@@ -63,6 +60,7 @@ span{
 }
 .text-header p{
     font-family: 'playfair display';
+    font-size: 20px;
 }
 .text-header img{
     width: 250px;
@@ -140,13 +138,23 @@ span{
 
 /*----------------------------------------services---------------------------------*/
 .my-sevices{
-    margin-bottom: 50px;
-    
+    margin-bottom: 50px; 
+}
+.service{
+    background-color: #262626;
+    border-radius: 32px;
+    transition: all 0.4s;
+}
+.service:hover{
+    background-color:rgba(255, 0, 81, 0.9);;
+    transform: translateY(-10px)
+}
+.icon-box{
+    font-size: 20px;
 }
 .services-list div{
     background: #262626;
-    border-radius: 10px;
-    margin: 10px;
+    border-radius: 20px; 
     transition: all 0.4s;
 }
 .services-list div i{
@@ -155,8 +163,7 @@ span{
 }
 .services-list div p{
     font-size: 15px;
-    font-weight: 200;
-    
+    font-weight: 200;  
 }
 .services-list div:hover{
     background: rgba(255, 0, 81, 0.9);
@@ -179,7 +186,6 @@ span{
     overflow: hidden;
 }
 .my-work{
-    margin-left: 5%;
     margin-bottom: 50px;
 }
 .work-list .work{
