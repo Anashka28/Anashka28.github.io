@@ -13,6 +13,7 @@ body {
     font-family: 'Poppins';
     font-size: 30px;
 }
+
 span{
     color: #ff004f;
 }
@@ -345,5 +346,8 @@ form input, textarea{
     .copyright p{
         font-size: 13px;
     }
-
+    .detail-section{
+        margin-top: 40px;
+    }
+    
 }
