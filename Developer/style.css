@@ -91,11 +91,11 @@ ul li a:hover::after{
 }
 .banner-img{
     background-image: url(img/work.jpg)!important;
-    width: 100%;
-    min-height: 450px;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    width: 100%!important;
+    min-height: 450px!important;
+    background-size: cover!important;
+    background-position: center!important;
+    background-attachment: fixed!important;
 }
 
 /* ***************Service Section******** */
